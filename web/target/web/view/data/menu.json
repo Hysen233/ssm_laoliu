@@ -1,0 +1,102 @@
+[{
+    "name": "首页",
+    "icon": "&#xe68e;",
+    "url": "/view/index.html",
+    "hidden": false,
+    "list": []
+},{
+    "name": "基本组件",
+    "icon": "&#xe653;",
+    "url": "",
+    "hidden": false,
+    "list": [{
+        "name": "layui基本组件",
+        "url": "/view/pages_component.html",
+    },{
+        "name": "layui内置模块",
+        "url": "/view/pages_model.html"
+    },{
+        "name": "提示框",
+        "url": "/view/pages_msg.html"
+    }]
+},{
+    "name":"用户管理",
+    "icon": "&#xe612;",
+    "url": "",
+    "hidden": false,
+    "list": [{
+        "name": "用户列表",
+        "url": "/view/user_index.html"
+    }, {
+        "name": "添加用户",
+        "url": "/view/user_add.html"
+    }]
+},{
+    "name":"管理员管理",
+    "icon": "&#xe612;",
+    "url": "",
+    "hidden": false,
+    "list": [{
+        "name": "管理员列表",
+        "url": "/admin/findByPage"
+    }, {
+        "name": "添加管理员",
+        "url": "/view/admin_add.jsp"
+    }]
+},{
+    "name": "角色管理",
+    "icon": "&#xe612;",
+    "url": "",
+    "hidden": false,
+    "list": [{
+        "name": "角色列表",
+        "url": "/role/findByPage"
+    }, {
+        "name": "添加角色",
+        "url": "/view/role_add.jsp"
+    }]
+}, {
+    "name": "文章管理",
+    "icon": "&#xe609;",
+    "url": "",
+    "hidden": false,
+    "list": [{
+        "name": "栏目管理",
+        "url": "/Columns/findAllToMap"
+    }, {
+        "name": "文章管理",
+        "url": "/Article/findAll"
+    }]
+}, {
+    "name": "系统设置",
+    "icon": "&#xe620;",
+    "url": "",
+    "hidden": false,
+    "list": [{
+        "name": "网站设置",
+        "url": "/view/web_index.html"
+    }, {
+        "name": "友情连接",
+        "url": "/link/findAll"
+    }, {
+        "name": "导航管理",
+        "url": "/view/nav_index.html"
+    }, {
+        "name": "修改密码",
+        "url": "/view/web_pwd.html"
+    }, {
+        "name": "清除缓存",
+        "url": "/view/web_cache.html"
+    }]
+},{
+    "name": "退出登录",
+    "icon": "&#xe65c;",
+    "url": "/view/out.html",
+    "list": []
+}, {
+    "name": "开发文档",
+    "icon": "&#xe655;",
+    "url": "http://docs.qadmin.net/",
+    "target": "_blank",
+    "list": []
+}]

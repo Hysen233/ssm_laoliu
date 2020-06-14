@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/security
+    http://www.springframework.org/schema/security/spring-security.xsd">
+    <import resource="classpath:spring-serice.xml"/>
+    <security:http pattern="/view/login.jsp" security="none"/>
+    <security:http pattern="/view/**" security="none"/>
+    <security:http pattern="/view/static/**" security="none"/>
+    <security:http pattern="/view/data/**" security="none"/>
+    <security:http pattern="/admin/**" security="none"/>
+    <security:http pattern="/Article/**" security="none"/>
+    <security:http pattern="/Columns/**" security="none"/>
+    <security:http pattern="/link/**" security="none"/>
+    <security:http pattern="/role/**" security="none"/>
+
+    <security:http pattern="/view/data/menu.json" security="none"/>
+    <security:global-method-security secured-annotations="enabled"/>
+    <security:http auto-config="true" use-expressions="false">
+        <security:intercept-url pattern="/**" access="ROLE_ADMIN,ROLE_USER"/>
+        <security:form-login login-page="/view/login.jsp"
+                             login-processing-url="/login.do"
+                             default-target-url="/view/index.jsp"
+                             authentication-success-forward-url="/view/index.jsp"
+        />
+        <security:csrf disabled="true"/>
+    </security:http>
+    <security:authentication-manager>
+        <security:authentication-provider user-service-ref="UserService">
+<!--            <security:password-encoder ref="passwordEncoder" />-->
+        </security:authentication-provider>
+    </security:authentication-manager>
+<!--    <bean id="passwordEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>-->
+</beans>
