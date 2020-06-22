@@ -89,7 +89,7 @@
                     <td>${li.qq}</td>
                     <td>${li.dispaly==1?'<span class="layui-badge layui-bg-green">开启</span>':"<span class='layui-badge'>关闭</span>"}</td>
                     <td>${li.data}</td>
-                    <td><a href="/link/findByid?id=${id}">修改</a> | <a data-id=".id35"  href="/admin/flink/del/id/35.html">删除</a></td>
+                    <td><a href="/link/findByid?id=${li.id}">修改</a> | <a data-id=".id35"  href="/admin/flink/del/id/35.html">删除</a></td>
                 </tr>
                 </c:forEach>
                 </tbody>

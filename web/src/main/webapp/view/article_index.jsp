@@ -90,7 +90,7 @@
             </table>
 
 
-            <div class="page"><ul class="pagination"><li class="disabled"><span>&laquo;</span></li> <li class="active"><span>1</span></li><li><a href="">2</a></li><li><a href="/admin/user/index.html?page=3">3</a></li><li><a href="/admin/user/index.html?page=4">4</a></li><li><a href="/admin/user/index.html?page=5">5</a></li><li><a href="/admin/user/index.html?page=6">6</a></li><li><a href="/admin/user/index.html?page=7">7</a></li><li><a href="/admin/user/index.html?page=8">8</a></li><li class="disabled"><span>...</span></li><li><a href="/admin/user/index.html?page=109">109</a></li><li><a href="/admin/user/index.html?page=110">110</a></li> <li><a href="/admin/user/index.html?page=2">&raquo;</a></li></ul></div>
+
 
 
         </div>

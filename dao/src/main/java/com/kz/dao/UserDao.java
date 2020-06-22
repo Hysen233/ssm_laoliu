@@ -32,4 +32,6 @@ public interface UserDao {
 
     @Update("UPDATE user SET username = #{username}, phone = #{phone}, email = #{email}, status = #{status}, password = #{password} WHERE id = #{id}")
     public void update(IUser iUser);
+
+
 }

@@ -27,4 +27,5 @@ public interface RoleDao {
 
     @Update("UPDATE role SET rolename = #{rolename} WHERE id = #{id}")
     public void update(Role role);
+
 }

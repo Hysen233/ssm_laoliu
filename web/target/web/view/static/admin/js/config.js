@@ -3,7 +3,7 @@
 var config = {
 
     //调试模式 (开启后左侧菜单不缓存,菜单收展失效,打开渲染速度会变慢)
-    debug: true,
+    debug: false,
 
     //网站名称 (左上角显示的文字LOGO)
     webname: '后台管理',
